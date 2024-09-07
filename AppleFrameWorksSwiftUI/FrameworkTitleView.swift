@@ -13,7 +13,8 @@ struct FrameworkTitleView: View {
   var image: String
  
   var body: some View {
-      VStack {
+     // VStack {
+    HStack {
           Image(image)
           .resizable()
           .frame(width: 90, height: 90)

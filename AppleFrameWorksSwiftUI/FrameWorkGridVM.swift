@@ -10,9 +10,13 @@ import SwiftUI
 class FrameWorkGridVM: ObservableObject  {
   
   var selectedFrameWork: Framework? {
-    didSet {
-      isShowingDetailView = true
-    }
+    didSet { isShowingDetailView = true }
   }
- @Published  var isShowingDetailView = false
+  
+  @Published  var isShowingDetailView = false
+  
+  let columns: [GridItem] = [GridItem(.flexible()),
+                             GridItem(.flexible()),
+                             GridItem(.flexible())]
+  
 }

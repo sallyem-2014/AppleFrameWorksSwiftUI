@@ -14,22 +14,15 @@ struct DetailedView: View {
   
   var body: some View {
       VStack {
-        HStack (){
-          Spacer()
-          Button(action: {
-            isShownigDetailView = false
-          },label: {
-            Image(systemName: "xmark")
-              .foregroundStyle(.gray)
-              .font(.title)
-          }).frame(alignment: .trailing)
-        }.padding(30)
- 
+      XButton(isShownigDetailView: $isShownigDetailView)
+         Spacer()
         FrameworkTitleView(name: frameWork.name, image: frameWork.imageName)
-          .padding()
+        Spacer()
+        
         Text(frameWork.description)
           .frame(alignment: .center)
           .padding()
+        Spacer()
         Button {
           
         } label: {
