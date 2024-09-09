@@ -15,6 +15,8 @@
 		3A2C6B322C887ED300F79504 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C6B312C887ED300F79504 /* FrameworkTitleView.swift */; };
 		3A2C6B342C8886B200F79504 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C6B332C8886B200F79504 /* DetailedView.swift */; };
 		3A2C6B3E2C89C31900F79504 /* FrameWorkGridVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C6B3D2C89C31900F79504 /* FrameWorkGridVM.swift */; };
+		3A2C6B402C8C55BB00F79504 /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C6B3F2C8C55BB00F79504 /* XButton.swift */; };
+		3A2C6B472C8C6AB200F79504 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C6B462C8C6AB200F79504 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		3A2C6B312C887ED300F79504 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
 		3A2C6B332C8886B200F79504 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
 		3A2C6B3D2C89C31900F79504 /* FrameWorkGridVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkGridVM.swift; sourceTree = "<group>"; };
+		3A2C6B3F2C8C55BB00F79504 /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
+		3A2C6B462C8C6AB200F79504 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +63,16 @@
 		3A2C6B202C88788600F79504 /* AppleFrameWorksSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				3A2C6B212C88788600F79504 /* AppleFrameWorksSwiftUIApp.swift */,
-				3A2C6B232C88788600F79504 /* FrameworKGridView.swift */,
-				3A2C6B252C88788900F79504 /* Assets.xcassets */,
-				3A2C6B272C88788900F79504 /* Preview Content */,
 				3A2C6B2F2C8878F200F79504 /* Framwork.swift */,
+				3A2C6B232C88788600F79504 /* FrameworKGridView.swift */,
+				3A2C6B3D2C89C31900F79504 /* FrameWorkGridVM.swift */,
 				3A2C6B312C887ED300F79504 /* FrameworkTitleView.swift */,
 				3A2C6B332C8886B200F79504 /* DetailedView.swift */,
-				3A2C6B3D2C89C31900F79504 /* FrameWorkGridVM.swift */,
+				3A2C6B3F2C8C55BB00F79504 /* XButton.swift */,
+				3A2C6B252C88788900F79504 /* Assets.xcassets */,
+				3A2C6B212C88788600F79504 /* AppleFrameWorksSwiftUIApp.swift */,
+				3A2C6B272C88788900F79504 /* Preview Content */,
+				3A2C6B462C8C6AB200F79504 /* SafariView.swift */,
 			);
 			path = AppleFrameWorksSwiftUI;
 			sourceTree = "<group>";
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2C6B302C8878F200F79504 /* Framwork.swift in Sources */,
+				3A2C6B402C8C55BB00F79504 /* XButton.swift in Sources */,
 				3A2C6B3E2C89C31900F79504 /* FrameWorkGridVM.swift in Sources */,
 				3A2C6B242C88788600F79504 /* FrameworKGridView.swift in Sources */,
+				3A2C6B472C8C6AB200F79504 /* SafariView.swift in Sources */,
 				3A2C6B342C8886B200F79504 /* DetailedView.swift in Sources */,
 				3A2C6B322C887ED300F79504 /* FrameworkTitleView.swift in Sources */,
 				3A2C6B222C88788600F79504 /* AppleFrameWorksSwiftUIApp.swift in Sources */,

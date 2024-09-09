@@ -23,7 +23,7 @@ struct FrameworkTitleView: View {
           .font(.title2)
           .fontWeight(.semibold)
           .scaledToFit()
-          .minimumScaleFactor(0.5)
+          .minimumScaleFactor(0.6)
       }
     }
 }

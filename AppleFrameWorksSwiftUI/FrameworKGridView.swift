@@ -9,27 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
   @StateObject var frameworkGridVM = FrameWorkGridVM()
-    var body: some View {
-      
-      NavigationView {
-        ScrollView {
-          LazyVGrid(columns: frameworkGridVM.columns) {
-            ForEach(MockData.frameworks) { framework in
-              FrameworkTitleView(name: framework.name, image: framework.imageName)
-                .onTapGesture {
-                  frameworkGridVM.selectedFrameWork = framework
-                }
-            }.navigationTitle("FramWorks")
+  var body: some View {
+    
+    NavigationView {
+      // ScrollView {
+      // LazyVGrid(columns: frameworkGridVM.columns) {
+      List {
+        ForEach(MockData.frameworks) { framework in
+        
+          NavigationLink {
+            DetailedView(frameWork: framework, isShownigDetailView: $frameworkGridVM.isShowingDetailView )
+          } label: {
+            FrameworkTitleView(name: framework.name, image: framework.imageName)
           }
+          
+          //                .onTapGesture {
+          //                  frameworkGridVM.selectedFrameWork = framework
+          //                }
         }
-      }.padding()
-        .fullScreenCover(isPresented: $frameworkGridVM.isShowingDetailView) {
-          DetailedView(frameWork: frameworkGridVM.selectedFrameWork ?? MockData.frameworks[0], isShownigDetailView: $frameworkGridVM.isShowingDetailView)
-        }
+      }.navigationTitle("🍎 Frameworks")
       
+      //}
+      //}
     }
+    .accentColor(.white)
+    //        .fullScreenCover(isPresented: $frameworkGridVM.isShowingDetailView) {
+    //          DetailedView(frameWork: frameworkGridVM.selectedFrameWork ?? MockData.frameworks[0], isShownigDetailView: $frameworkGridVM.isShowingDetailView)
+    //        }
+    
+  }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
